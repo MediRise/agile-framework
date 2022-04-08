@@ -1,0 +1,5 @@
+.idea
+Nginx*vhost.conf
+vendor
+.env
+node_modules

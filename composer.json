@@ -1,0 +1,20 @@
+{
+    "name": "mediarise/agile-framework",
+    "description": "PHP framework",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mediarise\\AgileFramework\\": "Mediarise/AgileFramework/",
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Edifanov Vitaliy",
+            "email": "vitaliy@edifanov.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
