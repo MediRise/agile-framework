@@ -10,7 +10,7 @@ class Application
      *
      * @var
      */
-    protected $basePath;
+    protected string $basePath;
 
     public function __construct($basePath = null)
     {
@@ -23,7 +23,7 @@ class Application
      * @param $basePath
      * @return $this
      */
-    public function setBasePath($basePath)
+    public function setBasePath($basePath): static
     {
         $this->basePath = rtrim($basePath, '\/');
 
@@ -31,10 +31,10 @@ class Application
     }
 
     /**
-     * @param $path
+     * @param string $path
      * @return string
      */
-    public function getBasePath($path = '')
+    public function getBasePath(string $path = ''): string
     {
         if ($path) {
             return $this->basePath . DIRECTORY_SEPARATOR . $path;
